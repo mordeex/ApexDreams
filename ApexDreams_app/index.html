@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" id="tc" content="#181926">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ApexDreams">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>ApexDreams</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<script>try{var t=JSON.parse(localStorage.getItem('rbprime-v1')).theme}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark')</script>
+<style>
+:root{--bg:#e7ecf4;--bg2:#d3dcec;--card:rgba(255,255,255,.62);--card2:rgba(255,255,255,.9);--line:rgba(255,255,255,.9);--tx:#0e1526;--mu:#68738c;--ac:#3b78e7;--ac2:#78a8ff;--g:linear-gradient(135deg,#78a8ff,#2f67d8);--glow:rgba(47,103,216,.35);--on:#fff;--sh:0 10px 30px rgba(40,70,120,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme=dark]{--bg:#181926;--bg2:#0f1019;--card:rgba(255,255,255,.055);--card2:rgba(255,255,255,.1);--line:rgba(255,255,255,.08);--tx:#f3f4ff;--mu:#9b9eb9;--ac:#7458ff;--ac2:#9a86ff;--g:linear-gradient(135deg,#8467ff,#5033e0);--glow:rgba(116,88,255,.5);--sh:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:linear-gradient(180deg,var(--bg),var(--bg2)) fixed;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0 auto;max-width:560px;min-height:100vh;padding:0 18px 120px;color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overscroll-behavior:none}
+.bg{position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none}
+.bg i{position:absolute;width:480px;height:480px;border-radius:50%;filter:blur(70px);background:var(--ac2);opacity:.5;top:-12%;right:-30%;animation:drift 18s ease-in-out infinite}
+.bg i+i{background:var(--ac);opacity:.28;top:auto;right:auto;bottom:-15%;left:-35%;animation-duration:25s;animation-direction:reverse}
+@keyframes drift{50%{transform:translate(9%,11%) scale(1.15)}}
+.top{display:flex;align-items:center;gap:10px;padding:18px 0 4px}
+.top>div{flex:1}
+.top small{letter-spacing:.08em;font-weight:600;font-size:11.5px}
+h1{margin:2px 0 0;font-size:clamp(30px,9vw,42px);line-height:1.02;font-weight:800;letter-spacing:-.03em}
+h2{margin:0 0 4px;font-size:20px;font-weight:800;letter-spacing:-.02em}
+h3{margin:4px 0 0;font-size:19px;font-weight:800}
+p{margin:4px 0 0}
+small,.mu{color:var(--mu);font-size:13px}
+.ib{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:var(--tx);font-size:19px;display:grid;place-items:center;box-shadow:var(--sh);cursor:pointer;transition:transform .2s}
+.ib:active{transform:scale(.88)}
+.spin{animation:spin .6s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:18px;margin-top:14px;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:var(--sh)}
+.hero{background:var(--g);color:#fff;border:0;overflow:hidden;display:flex;gap:12px;align-items:center;box-shadow:0 16px 36px var(--glow)}
+.hero small,.hero .mu{color:rgba(255,255,255,.82)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.28) 50%,transparent 65%);transform:translateX(-120%);animation:sheen 5s 1s infinite;pointer-events:none}
+@keyframes sheen{to{transform:translateX(120%)}}
+.hero>div{flex:1}
+.hero h2{font-size:30px;line-height:1.05;margin-top:6px}
+.chip{display:inline-block;background:rgba(255,255,255,.2);border-radius:999px;padding:5px 12px;margin:10px 6px 0 0;font-size:12.5px;font-weight:600}
+.ring{flex:none;width:112px;height:112px}
+.ring-p{stroke-dasharray:289;stroke-dashoffset:289;transition:stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stats .card{padding:14px;margin-top:14px}
+.stats b{display:block;font-size:21px;font-weight:800;margin-top:4px;letter-spacing:-.02em}
+.pills{display:flex;gap:8px;overflow-x:auto;padding:14px 2px 6px;scrollbar-width:none}
+.pill{flex:none;border:1px solid var(--line);background:var(--card);color:var(--mu);border-radius:999px;padding:11px 20px;font-weight:600;font-size:14px;font-family:inherit;cursor:pointer;transition:all .3s}
+.pill.on{background:var(--g);color:var(--on);border-color:transparent;box-shadow:0 8px 20px var(--glow)}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;color:var(--ac);text-transform:uppercase}
+.check-row,.time-row{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--line);animation:up .5s both;animation-delay:calc(var(--i,0)*40ms)}
+.check-row input{-webkit-appearance:none;appearance:none;flex:none;width:26px;height:26px;margin:0;border-radius:50%;border:2px solid var(--mu);display:grid;place-items:center;transition:all .25s}
+.check-row input:checked{background:var(--g);border-color:transparent;animation:pop .4s}
+.check-row input:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+@keyframes pop{40%{transform:scale(1.35)}}
+.check-copy{flex:1}
+.check-copy strong,.time-row strong{display:block}
+.check-row.done strong{opacity:.5;text-decoration:line-through}
+.row-time{color:var(--mu);font-size:12.5px;font-weight:600}
+.time-row time{flex:none;width:52px;font-weight:700;font-size:13px;color:var(--ac)}
+.time-row div{flex:1}
+.time-row.now{background:var(--card2);border-radius:18px;padding:12px;margin:2px -12px}
+.time-row.now time::after{content:"";display:inline-block;width:7px;height:7px;margin-left:5px;border-radius:50%;background:var(--ac);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.8);opacity:.35}}
+ul{margin:10px 0 0;padding:0;list-style:none}
+li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line)}
+.now.card{border-color:var(--ac);box-shadow:0 10px 30px var(--glow)}
+.page{display:none}
+.page.active{display:block}
+.page.active>*{animation:up .6s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*55ms)}
+#workout-grid>*,#roadmap>*{animation:up .6s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*70ms)}
+@keyframes up{from{opacity:0;transform:translateY(18px) scale(.97)}}
+.btn{border:0;border-radius:999px;padding:13px 22px;background:var(--g);color:var(--on);font-weight:700;font-size:15px;font-family:inherit;box-shadow:0 8px 20px var(--glow);cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.94)}
+.btn.ghost{background:var(--card2);color:var(--tx);box-shadow:none;border:1px solid var(--line)}
+label.f{display:block;margin-top:12px;font-weight:600;font-size:13px;color:var(--mu)}
+input:not([type=checkbox]):not([type=file]),select,textarea{display:block;width:100%;margin-top:6px;padding:13px;background:var(--card2);color:var(--tx);border:1px solid var(--line);border-radius:16px;font-family:inherit;font-size:16px}
+dialog{width:min(92vw,420px);border:1px solid var(--line);border-radius:28px;background:var(--bg);color:var(--tx);padding:20px}
+dialog::backdrop{background:rgba(5,8,20,.55)}
+dialog[open]{animation:up .4s cubic-bezier(.2,.9,.3,1.1)}
+.dock{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;gap:6px;padding:8px;border-radius:40px;background:var(--card);-webkit-backdrop-filter:blur(22px) saturate(1.4);backdrop-filter:blur(22px) saturate(1.4);border:1px solid var(--line);box-shadow:var(--sh);z-index:5;animation:dockin .8s .2s both cubic-bezier(.2,.9,.3,1.2)}
+@keyframes dockin{from{opacity:0;transform:translateX(-50%) translateY(40px)}}
+.dock button{width:46px;height:46px;border-radius:50%;border:0;background:transparent;color:var(--mu);display:grid;place-items:center;cursor:pointer;transition:all .35s cubic-bezier(.3,1.4,.5,1)}
+.dock button.active{background:var(--g);color:var(--on);box-shadow:0 8px 20px var(--glow);transform:translateY(-4px) scale(1.1)}
+.cf{position:fixed;left:50%;top:38%;width:9px;height:9px;border-radius:2px;pointer-events:none;z-index:20;animation:cf 1.1s ease-out forwards}
+@keyframes cf{to{transform:translate(var(--x),var(--y)) rotate(540deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+#logo{flex:none;width:46px;height:46px;border-radius:50%;object-fit:cover;background:#000;border:1px solid var(--line);box-shadow:var(--sh);animation:pop .6s .3s both}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.bigout{display:flex;align-items:baseline;gap:12px;margin-top:14px}.bigout b{font-size:44px;font-weight:800;letter-spacing:-.03em}
+.scale{position:relative;height:10px;border-radius:10px;margin:14px 0 12px;background:linear-gradient(90deg,#6ea2ff 0 14%,#3ccf91 14% 40%,#ffc857 40% 60%,#ff6b7a 60%)}
+.scale i{position:absolute;left:0;top:-5px;width:6px;height:20px;border-radius:4px;background:var(--tx);box-shadow:0 2px 8px rgba(0,0,0,.35);transition:left .9s cubic-bezier(.2,.8,.2,1)}
+.mini{background:var(--card2);border-radius:18px;padding:12px;margin-top:14px}
+#gate{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:24px;overflow:auto;background:linear-gradient(180deg,var(--bg),var(--bg2))}
+#gate.on{display:flex}
+#gate .box{width:min(100%,400px);animation:up .6s both}
+#gate img{display:block;width:88px;height:88px;margin:0 auto 14px;border-radius:26px;box-shadow:0 14px 34px var(--glow)}
+.err{min-height:20px;margin-top:8px;color:#ff6b7a;font-size:13px}
+.lnk{display:block;width:100%;margin-top:12px;background:none;border:0;color:var(--ac);font:600 14px inherit;font-family:inherit;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="bg"><i></i><i></i></div>
+<header class="top"><img id="logo" alt="ApexDreams logo" width="46" height="46"><div><small id="today-date"></small><h1 id="page-title">Today</h1></div><button class="ib" id="theme-toggle" aria-label="Switch light or dark mode"></button><button class="ib" id="settings-btn" aria-label="Profile settings">⚙</button></header>
+<main>
+<section class="page active" id="page-today">
+<div class="card hero"><div><small id="hero-date"></small><h2 id="hero-h">Achieve your goal</h2><p class="mu" id="hero-sub"></p><div id="chips"></div></div><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="46" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="11"/><circle id="ring-progress" class="ring-p" cx="60" cy="60" r="46" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" transform="rotate(-90 60 60)"/><text id="completion-pct" x="60" y="69" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">0%</text></svg></div>
+<div class="stats"><div class="card"><small>Done today</small><b id="done-count">0/7</b></div><div class="card"><small>Streak</small><b id="streak-count">0 days</b></div><div class="card"><small>Plan week</small><b id="week-no">1/12</b></div></div>
+<div class="card"><h2>Daily checklist</h2><div id="daily-checklist"></div><p><button class="btn ghost" id="reset-day">Reset today</button></p></div>
+<div class="card"><h2>Today’s schedule</h2><div id="today-timeline"></div></div>
+</section>
+<section class="page" id="page-training">
+<div class="card hero"><div><small id="ph-wk"></small><h2 id="ph-name"></h2><p class="mu" id="ph-desc"></p></div></div>
+<div class="pills" id="ph-pills"></div>
+<div id="workout-grid"></div>
+</section>
+<section class="page" id="page-nutrition">
+<div class="card hero"><div><small>Daily target</small><h2 id="kcal">—</h2><p class="mu" id="macro-sub"></p></div></div>
+<div class="stats" id="tiles"></div>
+<div class="card"><h2>Meal plan</h2><div id="meal-list"></div></div>
+<div class="card"><h2>Rules that move the needle</h2><div id="rules"></div></div>
+<div class="card calc"><h2>BMI calculator</h2><div class="g2"><label class="f">Height (cm)<input id="b-h" type="number" inputmode="decimal"></label><label class="f">Weight (kg)<input id="b-w" type="number" inputmode="decimal"></label></div>
+<div class="bigout"><b id="bmi-v">—</b><span id="bmi-c" class="mu">Enter height and weight</span></div><div class="scale"><i id="bmi-m"></i></div><p class="mu">BMI is a rough screen. Muscle adds weight, so track your waist and strength too.</p></div>
+<div class="card calc"><h2>Calorie intake calculator</h2><div class="g2"><label class="f">Sex<select id="c-s"><option value="m">Male</option><option value="f">Female</option></select></label><label class="f">Age<input id="c-a" type="number" inputmode="numeric"></label><label class="f">Height (cm)<input id="c-h" type="number" inputmode="decimal"></label><label class="f">Weight (kg)<input id="c-w" type="number" inputmode="decimal"></label></div>
+<label class="f">Activity<select id="c-x"><option value="1.2">Mostly sitting</option><option value="1.375">Light: 1–3 workouts a week</option><option value="1.55" selected>Moderate: 3–5 workouts a week</option><option value="1.725">Hard: 6–7 workouts a week</option></select></label>
+<label class="f">Goal<select id="c-g"><option value="-0.15">Lose fat (15% under)</option><option value="-0.08" selected>Build muscle, lose fat (8% under)</option><option value="0">Maintain</option><option value="0.1">Build muscle (10% over)</option></select></label>
+<div class="stats"><div class="mini"><small>Maintenance</small><b id="c-m">—</b></div><div class="mini"><small>Daily target</small><b id="c-t">—</b></div><div class="mini"><small>Protein</small><b id="c-p">—</b></div></div>
+<p class="mu" id="c-mac">Fill in every field to see your numbers.</p><p><button class="btn" id="c-use">Use as my daily target</button></p></div>
+</section>
+<section class="page" id="page-career">
+<div class="card hero"><div><small>Penetration testing</small><h2>12-week roadmap</h2><p class="mu">Legal, authorized labs only. Ship proof of work every week.</p></div></div>
+<div id="roadmap"></div>
+<div class="card"><h2>Skill moves</h2><div id="skill-checklist"></div></div>
+</section>
+<section class="page" id="page-empire">
+<div class="card hero"><div><small>Income and assets</small><h2>Build the empire</h2><p class="mu">Small, repeatable actions compound.</p></div></div>
+<div class="card"><div id="empire-checklist"></div></div>
+</section>
+<section class="page" id="page-review">
+<div class="stats"><div class="card"><small>Week</small><b id="week-completion">0%</b></div><div class="card"><small>Habits</small><b id="week-habits">0</b></div><div class="card"><small>Skill moves</small><b id="skill-count">0/4</b></div></div>
+<div class="card"><h2>Weekly review</h2><label class="f">Wins<textarea id="wins" rows="2"></textarea></label><label class="f">Friction<textarea id="friction" rows="2"></textarea></label><label class="f">Next week<textarea id="next-week" rows="2"></textarea></label><p><button class="btn" id="save-review">Save review</button> <small id="review-status"></small></p></div>
+<div class="card"><h2>Next app version</h2><div id="next-list"></div></div>
+<div class="card"><h2>Your data</h2><p class="mu"><span id="store-note">Stored only on this device.</span> <span id="sync-status"></span></p><p><button class="btn ghost" id="export-data">Export</button> <label class="btn ghost" style="display:inline-block">Import<input id="import-data" type="file" accept="application/json" hidden></label> <button class="btn ghost" id="clear-data">Clear all</button></p></div>
+</section>
+</main>
+<div id="gate"><div class="box"><img id="g-logo" alt=""><h1 id="g-t" style="text-align:center">Welcome back</h1><p class="mu" style="text-align:center">Sign in to keep your data synced across your devices.</p>
+<label class="f">Email<input id="g-e" type="email" autocomplete="email"></label><label class="f">Password<input id="g-p" type="password" autocomplete="current-password"></label>
+<div class="err" id="g-err"></div><button class="btn" id="g-go" style="width:100%;margin-top:6px">Sign in</button><button class="lnk" id="g-sw">New here? Create an account</button><button class="lnk" id="g-guest">Continue on this device only</button></div></div>
+<nav class="dock" aria-label="Pages"></nav>
+<dialog id="settings-dialog"><form method="dialog"><h2>Your profile</h2>
+<label class="f">Name<input id="user-name" autocomplete="off"></label>
+<label class="f">Age<input id="user-age" type="number" inputmode="numeric"></label>
+<label class="f">Sex, for calorie math<select id="user-sex"><option value="">Skip</option><option value="m">Male</option><option value="f">Female</option></select></label>
+<label class="f">Height (cm)<input id="user-h" type="number" inputmode="numeric"></label>
+<label class="f">Weight (kg)<input id="user-w" type="number" inputmode="decimal"></label>
+<div id="acct-box" hidden><small class="mu" id="acct"></small><p><button type="button" class="btn ghost" id="sync-now">Sync now</button> <button type="button" class="btn ghost" id="signout">Sign out</button></p></div>
+<p style="display:flex;gap:10px;margin-top:18px"><button class="btn ghost" value="x">Close</button><button class="btn" id="save-settings" value="ok">Save</button></p></form></dialog>
+<script>
+/* Cloud login and sync: paste your Supabase Project URL and anon key. Leave empty to stay on this device only. */
+const CLOUD={url:'',key:''};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const KEY='rbprime-v1',todayKey=()=>new Date().toLocaleDateString('en-CA');
+const weekKey=()=>{const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d.toLocaleDateString('en-CA')};
+let S;try{S=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+S=Object.assign({days:{},skills:{},empire:{},reviews:{},settings:{},theme:matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'},S||{});
+S.settings=S.settings||{};S.settings.age=S.settings.age||24;S.settings.start=S.settings.start||todayKey();
+const save=(touch=true)=>{if(touch)S._u=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}if(touch)sched()};save(false);
+const dayData=(k=todayKey())=>S.days[k]||(S.days[k]={});
+const wkNo=()=>Math.min(12,Math.max(1,Math.floor((new Date(todayKey())-new Date(S.settings.start))/6048e5)+1));
+const phI=w=>w<5?0:w<9?1:w<10?2:3;
+const O=a=>a.map(([id,title,desc,time])=>({id,title,desc,time}));
+const IC={today:'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',training:'<path d="M6 7v10M3 9v6M18 7v10M21 9v6M6 12h12"/>',nutrition:'<path d="M7 3v8a2 2 0 0 0 4 0V3M9 3v18M17 3c-2 2-3 5-3 8h3v10"/>',career:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',empire:'<path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/>',review:'<path d="M5 12l4 4L19 7"/>'};
+const T={today:'Today',training:'Training',nutrition:'Nutrition',career:'Pentest path',empire:'Build the empire',review:'Weekly review'};
+const DAY=[['4:45','Wake, water, mobility','Drink 500 ml and stretch 5 min. Shorter commute? Sleep till 5:15.'],['5:15','Protein breakfast','Prepped last night. 30+ g protein before you leave.'],['5:30','Commute out','30–60 min. Audio only: pentest podcasts, lab walkthroughs, flashcards.'],['6:30','Work','Stand and walk every hour. Finish one bottle by lunch.'],['11:30','Lunch and 10-min walk','40 g protein, carbs, veg. The walk steadies energy.'],['15:00','Commute home','Banana and yogurt or a shake on the way if you train.'],['16:15','Gym, 45–60 min','Warm up 5 min and log your weights. Shift later if the commute runs long.'],['17:45','Shower and dinner','40 g protein, potatoes or rice, a big plate of veg.'],['18:30','Pentest lab, 60 min','Legal labs only: TryHackMe, PortSwigger, your own VMs.'],['19:45','Career or empire, 30 min','One application, portfolio note or money check.'],['20:15','Prep tomorrow','Pack lunch and gym bag. Write your top 3.'],['21:00','Wind down, lights out 21:15','Screens off. 7.5 hours of sleep powers muscle gain and fat loss.']];
+const H=O([['move','Train or walk','Lift Mon, Wed, Fri. Easy cardio or a long walk on other days.','4:15 PM'],['fuel','Hit your protein','30–40 g at each of your 4 meals.','All day'],['water','Drink 2.5–3 L of water','Fill a bottle at work and refill at lunch.','All day'],['learn','Pentest lab hour','Legal labs only: TryHackMe, PortSwigger, local VMs.','6:30 PM'],['build','Career or empire action','One application, portfolio note or money review.','7:45 PM'],['prep','Prep tomorrow','Pack lunch and gym bag. Write your top 3.','8:15 PM'],['sleep','Lights out by 9:15 PM','7.5 hours of sleep builds muscle and burns fat.','9:15 PM']]);
+const PH=[['Foundation','Weeks 1–4','Learn the lifts. 2–3 sets of light weight, 3–4 reps left in the tank. Log your weights from week 2.'],['Build','Weeks 5–8','3 sets. When every set hits the top of the rep range, add 2.5–5 kg. Leave 2 reps in reserve.'],['Deload','Week 9','Drop one set per exercise and keep the weights. Recover, then test your top sets.'],['Push','Weeks 10–12','Add a 4th set to squat, press and row. Leave 1–2 reps in reserve. Add 5 min to Tuesday cardio.']];
+const SETS=['2–3','3','2','3–4'];
+const WK=[['Mon','Full Body A','Strength',[['Goblet squat','8–10'],['Machine chest press or push-up','8–12'],['Lat pulldown','8–12'],['Romanian deadlift, light','8–10'],['Plank','30 s']]],['Tue','Easy cardio','Fat loss',[['Zone-2 walk, bike or jog (can talk)','20–30 min'],['Mobility','5–10 min']]],['Wed','Full Body B','Strength',[['Leg press or split squat','10–12'],['Seated cable row','8–12'],['Dumbbell shoulder press','8–12'],['Hip bridge','10–15'],['Dead bug','8 each side']]],['Thu','Walk and mobility','Recovery',[['Outdoor walk, 8–10k steps','30 min'],['Mobility','10 min']]],['Fri','Full Body C','Strength',[['Squat variation','8–10'],['Incline dumbbell press','8–12'],['Assisted pull-up or pulldown','8–10'],['Hamstring curl','10–15'],['Farmer carry','30 s']]],['Sat','Choose your adventure','Optional',[['Hike, sport, cycle or swim','30–60 min'],['Plan next week','10 min']]],['Sun','Rest and reset','Recovery',[['Easy walk','Optional'],['Groceries and meal prep','45–60 min']]]];
+const MEALS=[['5:15','Breakfast','Greek yogurt oats with berries and nuts, or 3 eggs, toast and fruit. 30–40 g protein.'],['9:30','Work snack','Skyr or cottage cheese with fruit, or a turkey sandwich. 20–25 g protein.'],['11:30','Lunch','Chicken, fish, beans or tofu with rice or potatoes and lots of veg. 40 g protein.'],['15:15','Pre-gym snack','Banana plus yogurt, or a small sandwich. Easy to digest. 20 g protein.'],['17:45','Dinner','Salmon, lean beef or eggs with potatoes or whole grains and veg. 40 g protein.'],['20:00','Optional evening','Cottage cheese or yogurt if hungry. Skip it if you’re full.']];
+const RULES=['Weigh in 3 mornings a week and use the weekly average.','Expect the scale to move slowly (0–0.5 kg a week) while your lifts go up. Losing faster? Add 100–150 kcal.','Scale flat 3 weeks and waist not shrinking? Trim 100–150 kcal or add 2,000 steps a day.','Eat 80/20: mostly whole foods, no foods banned.','Prep on Sunday: two proteins, a carb batch and chopped veg.'];
+const RD=[['Weeks 1–3','Lab and fundamentals',['Map final-semester deadlines first','Build a legal lab: Kali VM plus DVWA or Juice Shop','Start TryHackMe Pre-Security, then Jr Penetration Tester','Set up notes and learn scope and rules of engagement']],['Weeks 4–6','Web and network testing',['PortSwigger Academy: SQLi, XSS, access control (3 labs a week)','Nmap and enumeration rooms on TryHackMe','Use Burp Suite 20 minutes a day','Write one lab write-up each week']],['Weeks 7–9','Exploit chains and reporting',['Do easy Hack The Box machines or Starting Point (authorized)','Learn Linux and Windows privilege escalation basics','Write a sanitized report: scope, method, risk, fix','Publish 2 write-ups on GitHub or LinkedIn']],['Weeks 10–12','Credential and applications',['Book an entry-level practical exam such as eJPT or PNPT','Polish CV, GitHub portfolio and LinkedIn headline','Apply to 5 junior pentest or security analyst roles a week','Run 2 mock interviews and a report walkthrough']]];
+const SK=O([['skill-lab','Finish one lab or room','Log the tools used and what you learned.'],['skill-write','Publish one write-up','Short, sanitized, with your own notes.'],['skill-cv','Take one career action','Improve a CV bullet, send an application or message a mentor.'],['skill-review','Plan next week','Choose the next small deliverable and block time.']]);
+const EM=O([['money-review','Review spending and cash flow','Know what came in and what went out.'],['save','Move something into savings','Small and automatic beats big and rare.'],['skill-income','Grow your earning power','Portfolio, applications or interview practice.'],['business','Research one business or investment idea','Write the risks, assumptions and what you need to learn.']]);
+const NX=[['Set and weight logger','Log sets, reps and kilograms with a rest timer. Suggest the next load automatically.'],['Body trend','Weekly weight and waist entries with a 7-day average chart that nudges your calories.'],['Meal and protein log','Quick-add favourite meals with protein and water totals against your targets.'],['Lab tracker','Hours, rooms and boxes finished, write-ups published, exam countdown.'],['Reminders','Export the daily schedule to your calendar. Push alerts later, with a small server.'],['Safe sync','Encrypted backup file in iCloud Drive or OneDrive, plus an update-available prompt.']];
+function tween(el,to,suf=''){const f=+el.dataset.v||0;el.dataset.v=to;if(RM){el.textContent=to+suf;return}const t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/700);el.textContent=Math.round(f+(to-f)*(1-Math.pow(1-k,3)))+suf;k<1&&requestAnimationFrame(s)})(t0)}
+function burst(){if(RM)return;for(let i=0;i<30;i++){const s=document.createElement('i'),a=Math.random()*6.28,r=90+Math.random()*160;s.className='cf';s.style.cssText=`--x:${Math.cos(a)*r}px;--y:${Math.sin(a)*r+90}px;background:hsl(${210+Math.random()*80} 90% 65%)`;document.body.append(s);setTimeout(()=>s.remove(),1200)}}
+function checklist(t,items,obj,fn,time){t.innerHTML=items.map((i,k)=>`<label class="check-row ${obj[i.id]?'done':''}" style="--i:${k}"><input type="checkbox" data-c="${i.id}" ${obj[i.id]?'checked':''}><span class="check-copy"><strong>${i.title}</strong><small>${i.desc||''}</small></span>${time?`<span class="row-time">${i.time||''}</span>`:''}</label>`).join('');t.querySelectorAll('input').forEach(e=>e.onchange=()=>{e.closest('.check-row').classList.toggle('done',e.checked);fn(e.dataset.c,e.checked)})}
+function stats(user){const d=dayData(),n=H.filter(h=>d[h.id]).length,pc=Math.round(n/H.length*100),was=+$('#completion-pct').dataset.v||0;
+tween($('#completion-pct'),pc,'%');$('#done-count').textContent=n+'/'+H.length;requestAnimationFrame(()=>$('#ring-progress').style.strokeDashoffset=289*(1-pc/100));
+$('#hero-h').textContent=pc>=100?'Perfect day':pc>=60?'Keep the momentum':'Achieve your goal';
+let st=0;for(let i=0;i<7;i++){const dt=new Date();dt.setDate(dt.getDate()-i);if(H.some(h=>(S.days[dt.toLocaleDateString('en-CA')]||{})[h.id]))st++;else if(i)break}
+$('#streak-count').textContent=st+(st==1?' day':' days');if(user&&pc==100&&was<100)burst()}
+const mins=t=>{const[a,b]=t.split(':');return +a*60+ +b};
+function renderToday(){const w=wkNo(),p=PH[phI(w)],now=new Date(),m=now.getHours()*60+now.getMinutes();let cur=-1;DAY.forEach((x,k)=>{if(mins(x[0])<=m)cur=k});
+$('#hero-date').textContent=now.toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});$('#hero-sub').textContent=`Week ${w} of 12: ${p[0]} phase.`;
+$('#chips').innerHTML=[S.settings.age+' years','Beginner','Build muscle, lose fat','Pentest focus'].map(c=>`<span class="chip">${c}</span>`).join('');$('#week-no').textContent=w+'/12';
+checklist($('#daily-checklist'),H,dayData(),(id,v)=>{dayData()[id]=v;save();stats(true)},true);
+$('#today-timeline').innerHTML=DAY.map((x,k)=>`<div class="time-row ${k==cur?'now':''}" style="--i:${k}"><time>${x[0]}</time><div><strong>${x[1]}</strong><small>${x[2]}</small></div></div>`).join('');stats()}
+let vp=phI(wkNo());
+function renderTraining(){const p=PH[vp],td=(new Date().getDay()+6)%7;$('#ph-wk').textContent=`${p[1]}. You are in week ${wkNo()}.`;$('#ph-name').textContent=p[0];$('#ph-desc').textContent=p[2];
+$('#ph-pills').innerHTML=PH.map((x,i)=>`<button class="pill ${i==vp?'on':''}" data-p="${i}">${x[0]}</button>`).join('');$$('#ph-pills button').forEach(b=>b.onclick=()=>{vp=+b.dataset.p;renderTraining()});
+$('#workout-grid').innerHTML=WK.map((w,k)=>`<article class="card ${k==td?'now':''}" style="--i:${k}"><span class="tag">${w[0]}${k==td?' · today':''} · ${w[2]}</span><h3>${w[1]}</h3><ul>${w[3].map(x=>`<li><span>${x[0]}</span><small>${/min|Optional/.test(x[1])?x[1]:SETS[vp]+' × '+x[1]}</small></li>`).join('')}</ul></article>`).join('')}
+function renderNutrition(){const s=S.settings,w=+s.w,h=+s.h,a=+s.age;let big='Set your targets',sub='Add sex, height and weight in Settings for exact numbers. Until then: protein 1.6–2.2 g per kg of bodyweight.',t=[['Protein','1.6–2.2 g/kg'],['Water','2.5–3 L'],['Meals','4 + snack']];
+if(w&&h&&a&&s.sex){const bmr=10*w+6.25*h-5*a+(s.sex=='m'?5:-161);big=Math.max(1500,Math.round(bmr*1.5*.92/10)*10)+' kcal';sub='About 8% under maintenance: slow fat loss while you build muscle.';t=[['Protein',Math.round(w*1.8)+' g'],['Water',(w*.035).toFixed(1)+' L'],['Meals','4 + snack']]}
+if(s.kcal){big=s.kcal+' kcal';sub='Your saved target. Change it in the calculator below.';t=[['Protein',(s.pro||Math.round(w*1.8))+' g'],['Water',w?(w*.035).toFixed(1)+' L':'2.5–3 L'],['Meals','4 + snack']]}fillCalc();
+$('#kcal').textContent=big;$('#macro-sub').textContent=sub;$('#tiles').innerHTML=t.map(x=>`<div class="card"><small>${x[0]}</small><b>${x[1]}</b></div>`).join('');
+$('#meal-list').innerHTML=MEALS.map((m,k)=>`<div class="time-row" style="--i:${k}"><time>${m[0]}</time><div><strong>${m[1]}</strong><small>${m[2]}</small></div></div>`).join('');
+$('#rules').innerHTML=RULES.map((r,k)=>`<div class="time-row" style="--i:${k}"><div>${r}</div></div>`).join('')}
+function renderCareer(){const cur=Math.floor((wkNo()-1)/3);$('#roadmap').innerHTML=RD.map((r,k)=>`<article class="card ${k==cur?'now':''}" style="--i:${k}"><span class="tag">${r[0]}${k==cur?' · you are here':''}</span><h3>${r[1]}</h3><ul>${r[2].map(t=>`<li><span>${t}</span></li>`).join('')}</ul></article>`).join('');
+checklist($('#skill-checklist'),SK,S.skills,(id,v)=>{S.skills[id]=v;save()})}
+function renderEmpire(){checklist($('#empire-checklist'),EM,S.empire,(id,v)=>{S.empire[id]=v;save()})}
+function renderReview(){const k=Object.keys(S.days).sort().slice(-7),n=k.reduce((a,x)=>a+H.filter(h=>S.days[x][h.id]).length,0),r=S.reviews[weekKey()]||{};
+$('#week-completion').textContent=Math.round(n/Math.max(1,k.length*H.length)*100)+'%';$('#week-habits').textContent=n;$('#skill-count').textContent=SK.filter(s=>S.skills[s.id]).length+'/'+SK.length;
+$('#wins').value=r.wins||'';$('#friction').value=r.friction||'';$('#next-week').value=r.next||'';
+$('#next-list').innerHTML=NX.map((x,k)=>`<div class="time-row" style="--i:${k}"><time>#${k+1}</time><div><strong>${x[0]}</strong><small>${x[1]}</small></div></div>`).join('')}
+function goto(p){$$('.page').forEach(e=>{const on=e.id=='page-'+p;e.classList.toggle('active',on);if(on)[...e.children].forEach((c,i)=>c.style.setProperty('--i',i))});
+$$('.dock button').forEach(b=>b.classList.toggle('active',b.dataset.page==p));$('#page-title').textContent=p=='today'&&S.settings.name?'Hi, '+S.settings.name:T[p];if(p=='review')renderReview();scrollTo({top:0,behavior:RM?'auto':'smooth'})}
+function theme(){document.documentElement.dataset.theme=S.theme;$('#theme-toggle').textContent=S.theme=='dark'?'☼':'☾';$('#tc').content=S.theme=='dark'?'#181926':'#e7ecf4'}
+function arm(b,fn){let t;b.onclick=()=>{if(b.dataset.arm){clearTimeout(t);delete b.dataset.arm;b.textContent=b.dataset.t;fn();return}b.dataset.t=b.textContent;b.dataset.arm=1;b.textContent='Tap again to confirm';t=setTimeout(()=>{delete b.dataset.arm;b.textContent=b.dataset.t},3000)}}
+$('.dock').innerHTML=Object.keys(T).map(k=>`<button data-page="${k}" aria-label="${T[k]}" title="${T[k]}"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</svg></button>`).join('');
+$$('.dock button').forEach(b=>b.onclick=()=>goto(b.dataset.page));
+$('#today-date').textContent='APEXDREAMS';$('#logo').src=document.querySelector('link[rel=apple-touch-icon]').href;$('#g-logo').src=$('#logo').src;
+$('#theme-toggle').onclick=e=>{const b=e.currentTarget;S.theme=S.theme=='dark'?'light':'dark';save();theme();b.classList.remove('spin');void b.offsetWidth;b.classList.add('spin')};
+$('#settings-btn').onclick=()=>{const s=S.settings;$('#user-name').value=s.name||'';$('#user-age').value=s.age||24;$('#user-sex').value=s.sex||'';$('#user-h').value=s.h||'';$('#user-w').value=s.w||'';acctUI();$('#settings-dialog').showModal()};
+$('#save-settings').onclick=()=>{Object.assign(S.settings,{name:$('#user-name').value.trim(),age:+$('#user-age').value||24,sex:$('#user-sex').value,h:+$('#user-h').value||'',w:+$('#user-w').value||''});save();renderToday();renderNutrition();goto('today')};
+arm($('#reset-day'),()=>{S.days[todayKey()]={};save();renderToday()});
+arm($('#clear-data'),()=>{try{localStorage.removeItem(KEY)}catch(e){}location.reload()});
+$('#save-review').onclick=()=>{S.reviews[weekKey()]={wins:$('#wins').value,friction:$('#friction').value,next:$('#next-week').value};save();$('#review-status').textContent='Saved on this device.';setTimeout(()=>$('#review-status').textContent='',2500)};
+$('#export-data').onclick=()=>{const j=JSON.stringify(S,null,2);try{navigator.clipboard.writeText(j)}catch(e){}try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([j],{type:'application/json'}));a.download='apexdreams-backup.json';a.click()}catch(e){}$('#review-status').textContent='Backup exported.'};
+$('#import-data').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const o=JSON.parse(await f.text());if(!o||typeof o!='object'||!o.days)throw 0;S=o;save();location.reload()}catch(x){$('#review-status').textContent='That file is not a valid backup.'}e.target.value=''};
+let CALC=null;
+function fillCalc(){const s=S.settings;[['#b-h',s.h],['#b-w',s.w],['#c-h',s.h],['#c-w',s.w],['#c-a',s.age]].forEach(([i,v])=>{if(v)$(i).value=v});if(s.sex)$('#c-s').value=s.sex;calc()}
+function calc(){const nv=i=>+$(i).value,h=nv('#b-h'),w=nv('#b-w');
+if(h>0&&w>0){const b=w/((h/100)**2);$('#bmi-v').textContent=b.toFixed(1);$('#bmi-c').textContent=b<18.5?'Underweight':b<25?'Healthy range':b<30?'Overweight':'Obesity range';$('#bmi-m').style.left=Math.max(0,Math.min(97,(b-15)/25*100))+'%'}
+else{$('#bmi-v').textContent='—';$('#bmi-c').textContent='Enter height and weight';$('#bmi-m').style.left='0%'}
+const ch=nv('#c-h'),cw=nv('#c-w'),ca=nv('#c-a');
+if(ch>0&&cw>0&&ca>0){const bmr=10*cw+6.25*ch-5*ca+($('#c-s').value=='m'?5:-161),td=bmr*nv('#c-x'),t=Math.max(1500,Math.round(td*(1+nv('#c-g'))/10)*10),p=Math.round(cw*1.8),f=Math.round(cw*.8);
+$('#c-m').textContent=Math.round(td/10)*10;tween($('#c-t'),t);$('#c-p').textContent=p+' g';$('#c-mac').textContent=`Carbs about ${Math.max(0,Math.round((t-p*4-f*9)/4))} g and fat about ${f} g.`;CALC={t,p}}
+else{CALC=null;['#c-m','#c-t','#c-p'].forEach(i=>$(i).textContent='—');$('#c-t').dataset.v=0;$('#c-mac').textContent='Fill in every field to see your numbers.'}}
+$$('.calc input,.calc select').forEach(e=>e.addEventListener('input',calc));
+$('#c-use').onclick=()=>{if(!CALC)return;Object.assign(S.settings,{kcal:CALC.t,pro:CALC.p,h:+$('#c-h').value,w:+$('#c-w').value,age:+$('#c-a').value,sex:$('#c-s').value});save();renderNutrition();renderToday();$('#c-use').textContent='Saved as your target';setTimeout(()=>$('#c-use').textContent='Use as my daily target',2200)};
+/* login and cloud sync (Supabase REST, no library) */
+let A=null,pt,gm='in';try{A=JSON.parse(localStorage.getItem('rbprime-auth'))}catch(e){}
+const cloud=()=>!!(CLOUD.url&&CLOUD.key);
+const stat=t=>{const e=$('#sync-status');if(e)e.textContent=t;const n=$('#store-note');if(n)n.textContent=A?'Saved here and synced to your account.':'Stored only on this device.'};
+async function api(path,o={}){const h={apikey:CLOUD.key,'Content-Type':'application/json',...(A&&!o.anon?{Authorization:'Bearer '+A.t}:{}),...(o.h||{})};
+const r=await fetch(CLOUD.url+path,{method:o.m||'GET',headers:h,body:o.b?JSON.stringify(o.b):undefined}),x=await r.text();let j;try{j=JSON.parse(x)}catch(e){j=x}
+if(!r.ok)throw new Error((j&&(j.msg||j.error_description||j.message))||'Something went wrong');return j}
+function setAuth(j){const u=j.user||{};A={t:j.access_token,r:j.refresh_token,x:Date.now()+(j.expires_in||3600)*1000-6e4,e:u.email||(A&&A.e),u:u.id||(A&&A.u)};try{localStorage.setItem('rbprime-auth',JSON.stringify(A))}catch(e){}}
+async function fresh(){if(A&&Date.now()>A.x)setAuth(await api('/auth/v1/token?grant_type=refresh_token',{m:'POST',anon:1,b:{refresh_token:A.r}}))}
+function sched(){if(!A)return;clearTimeout(pt);stat('Saving...');pt=setTimeout(up,1500)}
+async function up(){try{await fresh();S._u=S._u||Date.now();await api('/rest/v1/app_state?on_conflict=user_id',{m:'POST',h:{Prefer:'resolution=merge-duplicates,return=minimal'},b:{user_id:A.u,data:S,updated_at:new Date().toISOString()}});stat('Synced')}catch(e){stat('Offline. It will sync next time you open the app.')}}
+async function down(){if(!A)return;try{await fresh();const r=await api('/rest/v1/app_state?select=data&limit=1'),d=r[0]&&r[0].data;
+if(d&&(d._u||0)>(S._u||0)){S=Object.assign({days:{},skills:{},empire:{},reviews:{},settings:{}},d);save(false);renderAll();stat('Synced')}else if(!d||(S._u||0)>(d._u||0))await up();else stat('Synced')}catch(e){stat('Offline')}}
+function showGate(on){$('#gate').classList.toggle('on',on)}
+function gateMode(m){gm=m;$('#g-go').textContent=m=='in'?'Sign in':'Create account';$('#g-sw').textContent=m=='in'?'New here? Create an account':'Have an account? Sign in';$('#g-t').textContent=m=='in'?'Welcome back':'Create your account'}
+$('#g-sw').onclick=()=>gateMode(gm=='in'?'up':'in');
+$('#g-go').onclick=async()=>{const e=$('#g-e').value.trim(),p=$('#g-p').value,er=$('#g-err');er.textContent='';if(!e||p.length<6){er.textContent='Enter your email and a password of 6+ characters.';return}
+try{$('#g-go').disabled=true;const j=await api(gm=='in'?'/auth/v1/token?grant_type=password':'/auth/v1/signup',{m:'POST',anon:1,b:{email:e,password:p}});
+if(!j.access_token){er.textContent='Check your email to confirm your account, then sign in.';gateMode('in');return}
+setAuth(j);showGate(false);await down();goto('today')}catch(x){er.textContent=x.message}finally{$('#g-go').disabled=false}};
+$('#g-guest').onclick=()=>{try{localStorage.setItem('rbprime-guest','1')}catch(e){}showGate(false)};
+function acctUI(){$('#acct-box').hidden=!cloud();if(!cloud())return;$('#acct').textContent=A?'Signed in as '+A.e:'Not signed in. Your data stays on this device.';$('#signout').textContent=A?'Sign out':'Sign in'}
+$('#signout').onclick=()=>{A=null;try{localStorage.removeItem('rbprime-auth');localStorage.removeItem('rbprime-guest')}catch(e){}$('#settings-dialog').close();stat('');showGate(true)};
+$('#sync-now').onclick=()=>{if(A)down()};
+function initCloud(){if(!cloud())return;let g=false;try{g=!!localStorage.getItem('rbprime-guest')}catch(e){}if(!A&&!g)showGate(true);down();addEventListener('visibilitychange',()=>{if(!document.hidden)down()})}
+function renderAll(){theme();renderToday();renderTraining();renderNutrition();renderCareer();renderEmpire();renderReview()}
+renderAll();goto('today');initCloud();
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>
